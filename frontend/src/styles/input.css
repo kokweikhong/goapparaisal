@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-div {
+    @apply flex flex-col gap-1;
+  }
+  .form-label {
+    @apply text-[#A9A9A9] text-[12px];
+  }
+  .form-input {
+    @apply border border-black p-2 text-[14px] font-medium;
+  }
+}
