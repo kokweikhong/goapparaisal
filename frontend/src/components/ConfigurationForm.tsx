@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { OpenDirForExcelFile, GetExcelSheets, InitEmployeeData } from "../../wailsjs/go/main/App";
 // import { IEmployeeProps } from "../variables/employee";
 import { useConfigContext } from "../context/config";
@@ -12,7 +12,18 @@ const ConfigurationForm: React.FC = () => {
   const { data, setData } = useEmployeeContext()
   const [sheets, setSheets] = useState<string[]>([])
   const [supervisors, setSupervisors] = useState<string[]>([])
+  let years: string[] = [0, 1, -1].map(i => (String(new Date().getFullYear() - i)))
+
   console.log(data.raw)
+
+  useEffect(() => {
+    const period: string = '01/07/' + String(new Date().getFullYear() - 1) + " to 30/06/" + String(new Date().getFullYear())
+    setConfig({ ...config, period: period })
+  }, [])
+
+  const handleYearOnChange = (year: string) => {
+    setConfig({ ...config, supervisor: "ALL", year: year, period: "01/07/" + String(parseInt(year) - 1) + " to 30/06/" + year })
+  }
 
   const handleOpenExcelFile = async () => {
     const res = await OpenDirForExcelFile()
@@ -23,12 +34,13 @@ const ConfigurationForm: React.FC = () => {
   const handleSheetChange = async () => {
     const res = await InitEmployeeData(config.excelpath, config.sheet)
     setData(prev => ({ ...prev, data: { ...prev.data, raw: res } }))
-    let supers = res.map(item => (item.supervisor))
+    let supers: string[] = res.map(item => (item.supervisor))
     supers = [...new Set(supers)]
+    supers = ["ALL"].concat(supers)
     setSupervisors(supers)
   }
   const handleSupervisorChange = () => {
-    const filteredData = data.raw.filter(ele => { return (ele.supervisor === config.supervisor) })
+    const filteredData = data.raw.filter(ele => { return (config.supervisor === "ALL" ? ele : ele.supervisor === config.supervisor) })
     setData(prev => ({ ...prev, data: { ...prev.data, filtered: filteredData } }))
   }
 
@@ -41,12 +53,16 @@ const ConfigurationForm: React.FC = () => {
       </div>
       <div className="flex justify-start gap-10">
         <div className="flex gap-4">
-          <label className="font-semibold self-center">Period From :</label>
-          <input type="date" value={config?.periodFrom} />
+          <label className="font-semibold self-center">Year :</label>
+          <select value={config.year} onChange={(e) => handleYearOnChange(e.target.value)} className="tracking-wider w-[150px]">
+            {years.map((year, index) => (
+              <option value={year} key={index}>{year}</option>
+            ))}
+          </select>
         </div>
-        <div className="flex gap-4">
-          <label className="font-semibold self-center">Period To :</label>
-          <input type="date" value={config?.periodTo} />
+        <div className="flex gap-4 grow">
+          <label className="font-semibold self-center">Period :</label>
+          <input type="text" value={config?.period} disabled className="grow p-2 tracking-wider" />
         </div>
       </div>
       <div className="grid grid-cols-2 items-center gap-20">

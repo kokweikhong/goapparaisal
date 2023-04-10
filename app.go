@@ -68,3 +68,7 @@ func (a *App) ResetScoreDetails(scoreDetail interface{}) (*backend.ScoreDetail, 
 func (a *App) GenerateScoreDetails(scoreDetail interface{}) (*backend.ScoreDetail, error) {
 	return backend.GenerateScoreDetails(scoreDetail)
 }
+
+func (a *App) GenerateAllEmployeeData(data []*backend.Employee) []*backend.Employee {
+	return backend.GenerateAllEmployeeData(data)
+}

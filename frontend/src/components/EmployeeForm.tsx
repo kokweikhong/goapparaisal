@@ -4,6 +4,7 @@ import { IEmployee } from "../variables/employee";
 import { ScoreDetailsFormInput } from "./ScoreDetailsFormInput";
 import { GenerateAverageScores } from "../../wailsjs/go/main/App";
 import { useEmployeeContext } from "../context/employee";
+import { useConfigContext } from "../context/config";
 
 export interface IEmployeeFormProps {
   employee: IEmployee
@@ -12,6 +13,7 @@ export interface IEmployeeFormProps {
 
 export const EmployeeForm: React.FC<IEmployee> = (employee: IEmployee) => {
   const { data, setData } = useEmployeeContext()
+  const { config } = useConfigContext()
   const { register, handleSubmit, reset } = useForm<IEmployee>({
     defaultValues: {}
   });
@@ -26,6 +28,7 @@ export const EmployeeForm: React.FC<IEmployee> = (employee: IEmployee) => {
   const handleGenerateAverageScores = async () => {
     const employeeAfterAverageScore = await GenerateAverageScores(employee) as unknown as IEmployee
     employee = employeeAfterAverageScore
+    employee.periodUnderReview = config.period
     reset(employee)
   }
 

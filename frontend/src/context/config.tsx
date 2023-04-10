@@ -5,8 +5,8 @@ const initialConfig: IConfig = {
   excelpath: "",
   supervisor: "",
   sheet: "",
-  periodFrom: "",
-  periodTo: ""
+  year: "",
+  period: "",
 }
 
 const ConfigContext = createContext<IConfigProps>({

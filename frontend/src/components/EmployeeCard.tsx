@@ -22,6 +22,10 @@ export const EmployeeCard: React.FC<IEmployeeCardProps> = ({ data, visible, setV
         className="absolute top-3 right-5 bg-blue-500 text-[10px] text-white py-1 px-2 rounded-md uppercase font-medium tracking-wider">
         Edit
       </button>
+
+      <div className="flex flex-col justify-center items-center absolute top-10 right-5 py-1">
+        <span className={`${data.score < 1 || data.rating < 1 || data.scoreDetails.safety.overall < 1 ? "bg-red-500" : "bg-green-500"} h-[20px] w-[35px]`}></span>
+      </div>
       <h1 className="text-[14px] font-semibold">{data.employeeCode}</h1>
       <h1 className="text-[14px] font-semibold">{data.employeeName}</h1>
       <div className="flex flex-col py-1">

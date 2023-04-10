@@ -109,7 +109,24 @@ const (
 	COMMENT_ATTENDANCE
 )
 
+func GenerateAllEmployeeData(data []*Employee) []*Employee {
+	for _, d := range data {
+		d = GenerateAverageScores(d)
+	}
+	return data
+}
+
 func GenerateAverageScores(data *Employee) *Employee {
+	if data.Score < 1 && data.Rating < 1 {
+		return data
+	} else if data.Rating > 1 && data.Score < 1 {
+		rand.Seed(time.Now().Unix())
+		data.Score = GenerateScoreByRating(data.Rating)
+		data.Score = float64(int64(data.Score/0.5+0.5)) * 0.5
+	} else if data.Rating < 1 && data.Score > 1 {
+		rand.Seed(time.Now().Unix())
+		data.Rating = GenerateRatingByScore(data.Score)
+	}
 	totalScore := data.Score * 0.8
 	var totalSkip int = 0
 	for k, v := range data.ScoreDetails {
@@ -139,11 +156,55 @@ func GenerateAverageScores(data *Employee) *Employee {
 			v.Comment = GetScoreDetailComment(v.Overall, COMMENT_RESPONSIBILITY)
 		case strings.Contains(strings.ToLower(k), "attendance"):
 			v.Comment = GetScoreDetailComment(v.Overall, COMMENT_ATTENDANCE)
-        default:
-            v.Comment = "Nil"
+		default:
+			v.Comment = "Nil"
 		}
 	}
 	return data
+}
+
+func GenerateRatingByScore(score float64) int {
+	var rating int
+
+	switch true {
+	case score >= 90:
+		rating = 5
+	case score >= 80:
+		rating = 4
+	case score >= 70:
+		rating = 3
+	case score >= 50:
+		rating = 2
+	default:
+		rating = 1
+	}
+	return rating
+
+}
+
+func GenerateScoreByRating(rating int) float64 {
+	var min float64
+	var max float64
+	// v := float64(rand.Intn((maxRand-minRand)/0.05))*0.05 + minRand
+	// var score float64
+	switch rating {
+	case 5:
+		min = 90
+		max = 100
+	case 4:
+		min = 80
+		max = 89
+	case 3:
+		min = 70
+		max = 79
+	case 2:
+		min = 50
+		max = 69
+	default:
+		min = 40
+		max = 49
+	}
+	return min + rand.Float64()*(max-min)
 }
 
 func GetScoreDetailComment(score float64, category int) string {
@@ -189,9 +250,9 @@ func GetScoreDetailComment(score float64, category int) string {
 		// index := rand.Intn(len(commentsByGrade))
 		index := rand.Int() % len(commentsByGrade)
 		result = commentsByGrade[index]
-        fmt.Println(result)
+		fmt.Println(result)
 	}
-    fmt.Println(result)
+	fmt.Println(result)
 	return result
 }
 
