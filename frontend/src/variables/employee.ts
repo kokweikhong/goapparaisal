@@ -27,6 +27,13 @@ export interface IEmployee {
     teamwork: IScoreDetails
     attendance: IScoreDetails
   }
+  performanceSummary: {
+    strengthsOfEmployee: string
+    weaknessOfEmployee: string
+    improvementNeeds: string
+    actionPlan: string
+  }
+  trainingComment: string
 }
 
 export interface IEmployeeProps {
@@ -124,5 +131,12 @@ export const initialEmployeeData: IEmployee = {
       ],
       "comment": "Nil"
     }
-  }
+  },
+  "performanceSummary": {
+    "strengthsOfEmployee": "Nil",
+    "weaknessOfEmployee": "Nil",
+    "improvementNeeds": "Nil",
+    "actionPlan": "Nil",
+  },
+  "trainingComment": "Nil",
 }

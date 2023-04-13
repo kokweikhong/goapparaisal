@@ -7,6 +7,7 @@ const initialConfig: IConfig = {
   sheet: "",
   year: "",
   period: "",
+  jsondir: "",
 }
 
 const ConfigContext = createContext<IConfigProps>({

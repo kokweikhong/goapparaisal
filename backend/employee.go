@@ -3,8 +3,10 @@ package backend
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"math"
 	"math/rand"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
@@ -22,6 +24,8 @@ type Employee struct {
 	Score             float64                 `json:"score"`
 	Rating            int                     `json:"rating"`
 	ScoreDetails      map[string]*ScoreDetail `json:"scoreDetails"`
+	PeformanceSummary map[string]string       `json:"performanceSummary"`
+	TrainingComment   string                  `json:"trainingComment"`
 }
 
 type ScoreDetail struct {
@@ -32,6 +36,8 @@ type ScoreDetail struct {
 
 var scoreDetailItems = []string{"jobKnowledge", "qualityOfWork",
 	"quantityOfWork", "teamwork", "responsibility", "initiative", "safety", "attendance"}
+
+var performanceSummaryItems = []string{"strenghtsOfEmployee", "weaknessOfEmployee", "improvementNeeds", "actionPlan"}
 
 // InitEmployeeData is to initialize data and data cleaning
 func InitEmployeeData(rows [][]string) ([]*Employee, error) {
@@ -78,25 +84,15 @@ func InitEmployeeData(rows [][]string) ([]*Employee, error) {
 
 			}
 		}
+		employee.PeformanceSummary = make(map[string]string, len(performanceSummaryItems))
+		for _, item := range performanceSummaryItems {
+			employee.PeformanceSummary[item] = "Nil"
+		}
+		employee.TrainingComment = "Nil"
 		employees = append(employees, employee)
 	}
 	return employees, nil
 }
-
-// func GenerateAverageScores(overall float64, total int) []float64 {
-// 	scores := make([]float64, total)
-// 	var accumulateScore float64
-// 	for i := 0; i < len(scores); i++ {
-// 		score := (overall - accumulateScore) / float64((len(scores) - i))
-// 		if i == len(scores)-1 {
-// 			scores[i] = math.Round((overall-accumulateScore)*10) / 10
-// 		} else if i < len(scores) {
-// 			scores[i] = math.Round(score*10) / 10
-// 		}
-// 		accumulateScore += math.Round(score*10) / 10
-// 	}
-// 	return scores
-// }
 
 const (
 	COMMENT_JOBKNOWLEDGE = iota + 1
@@ -114,6 +110,32 @@ func GenerateAllEmployeeData(data []*Employee) []*Employee {
 		d = GenerateAverageScores(d)
 	}
 	return data
+}
+
+func SaveEmployeeDataToJsonFile(data []*Employee, jsondir string) error {
+	b, err := json.MarshalIndent(data, "", "  ")
+	if err != nil {
+		return err
+	}
+	date := time.Now().Format("02012006")
+	jsonName := fmt.Sprintf("%v-nonexec-appraisal.json", date)
+	filename := filepath.Join(jsondir, jsonName)
+	if err = ioutil.WriteFile(filename, b, 0644); err != nil {
+		return err
+	}
+	return nil
+}
+
+func ReadEmployeeDataFromJsonFile(jsonFile string) ([]*Employee, error) {
+	var employees []*Employee
+	b, err := ioutil.ReadFile(jsonFile)
+	if err != nil {
+		return nil, err
+	}
+	if err = json.Unmarshal(b, &employees); err != nil {
+		return nil, err
+	}
+	return employees, nil
 }
 
 func GenerateAverageScores(data *Employee) *Employee {

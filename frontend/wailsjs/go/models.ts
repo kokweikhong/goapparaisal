@@ -28,6 +28,8 @@ export namespace backend {
 	    score: number;
 	    rating: number;
 	    scoreDetails: {[key: string]: ScoreDetail};
+	    performanceSummary: {[key: string]: string};
+	    trainingComment: string;
 	
 	    static createFrom(source: any = {}) {
 	        return new Employee(source);
@@ -46,6 +48,8 @@ export namespace backend {
 	        this.score = source["score"];
 	        this.rating = source["rating"];
 	        this.scoreDetails = source["scoreDetails"];
+	        this.performanceSummary = source["performanceSummary"];
+	        this.trainingComment = source["trainingComment"];
 	    }
 	}
 

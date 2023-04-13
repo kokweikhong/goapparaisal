@@ -34,6 +34,22 @@ export function OpenDirForExcelFile() {
   return window['go']['main']['App']['OpenDirForExcelFile']();
 }
 
+export function OpenDirectory() {
+  return window['go']['main']['App']['OpenDirectory']();
+}
+
+export function ReadEmployeeDataFromJsonFile(arg1) {
+  return window['go']['main']['App']['ReadEmployeeDataFromJsonFile'](arg1);
+}
+
 export function ResetScoreDetails(arg1) {
   return window['go']['main']['App']['ResetScoreDetails'](arg1);
+}
+
+export function SaveEmployeeDataToJson(arg1, arg2) {
+  return window['go']['main']['App']['SaveEmployeeDataToJson'](arg1, arg2);
+}
+
+export function UpdateEmployeeDataToJson(arg1, arg2) {
+  return window['go']['main']['App']['UpdateEmployeeDataToJson'](arg1, arg2);
 }

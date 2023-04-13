@@ -1,43 +1,42 @@
-import React, { useEffect } from "react";
+import React, { Dispatch, SetStateAction, useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { IEmployee } from "../variables/employee";
 import { ScoreDetailsFormInput } from "./ScoreDetailsFormInput";
 import { GenerateAverageScores } from "../../wailsjs/go/main/App";
-import { useEmployeeContext } from "../context/employee";
-import { useConfigContext } from "../context/config";
 
 export interface IEmployeeFormProps {
-  employee: IEmployee
+  selected: IEmployee
+  setSelected: Dispatch<SetStateAction<IEmployee>>
+  data: IEmployee[]
+  setData: Dispatch<SetStateAction<IEmployee[]>>
 }
 
 
-export const EmployeeForm: React.FC<IEmployee> = (employee: IEmployee) => {
-  const { data, setData } = useEmployeeContext()
-  const { config } = useConfigContext()
+export const EmployeeForm: React.FC<IEmployeeFormProps> = ({ selected, setSelected, data, setData }) => {
+  console.log(selected)
   const { register, handleSubmit, reset } = useForm<IEmployee>({
     defaultValues: {}
   });
   const onSubmit: SubmitHandler<IEmployee> = (formData) => {
-    const updateData = data.filtered.map(e => (
+    const updateData = data.map(e => (
       e.employeeCode === formData.employeeCode ? formData : e
     ))
-    setData(prev => ({ ...prev, data: { ...prev.data, filtered: updateData } }))
-    console.log(data);
+    alert(selected.employeeName + " data saved!")
+    setData(updateData)
   }
 
   const handleGenerateAverageScores = async () => {
-    const employeeAfterAverageScore = await GenerateAverageScores(employee) as unknown as IEmployee
-    employee = employeeAfterAverageScore
-    employee.periodUnderReview = config.period
-    reset(employee)
+    const employeeAfterAverageScore = await GenerateAverageScores(selected) as unknown as IEmployee
+    setSelected(employeeAfterAverageScore)
+    reset(employeeAfterAverageScore)
   }
 
   useEffect(() => {
-    reset(employee)
-  }, [employee])
+    reset(selected)
+  }, [selected])
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} >
       <div className="grid grid-cols-2 gap-4">
         <div className="form-div">
           <label className="form-label">Employee No</label>
@@ -72,6 +71,7 @@ export const EmployeeForm: React.FC<IEmployee> = (employee: IEmployee) => {
           <input {...register("rating")} type="number" step={1} className="form-input" />
         </div>
       </div>
+
       <div className="py-10">
         <div className="my-4 flex gap-4 items-center">
           <h2 className="font-bold uppercase text-xl">Score Details</h2>
@@ -82,46 +82,82 @@ export const EmployeeForm: React.FC<IEmployee> = (employee: IEmployee) => {
           register={register}
           title="Job Knowledge"
           scoreLabel="jobKnowledge"
-          scoreDetails={employee.scoreDetails.jobKnowledge}
+          scoreDetails={selected?.scoreDetails.jobKnowledge}
         />
         <ScoreDetailsFormInput
           register={register}
           title="Quality Of Work"
           scoreLabel="qualityOfWork"
-          scoreDetails={employee.scoreDetails.qualityOfWork}
+          scoreDetails={selected?.scoreDetails.qualityOfWork}
         />
         <ScoreDetailsFormInput
           register={register}
           title="Quantity Of Work"
           scoreLabel="quantityOfWork"
-          scoreDetails={employee.scoreDetails.quantityOfWork}
+          scoreDetails={selected?.scoreDetails.quantityOfWork}
         />
         <ScoreDetailsFormInput
           register={register}
           title="Teamwork/Co-operation"
           scoreLabel="teamwork"
-          scoreDetails={employee.scoreDetails.teamwork}
+          scoreDetails={selected?.scoreDetails.teamwork}
         />
         <ScoreDetailsFormInput
           register={register}
           title="Dependability/Responsibility"
           scoreLabel="responsibility"
-          scoreDetails={employee.scoreDetails.responsibility}
+          scoreDetails={selected?.scoreDetails.responsibility}
         />
         <ScoreDetailsFormInput
           register={register}
           title="Initiative"
           scoreLabel="initiative"
-          scoreDetails={employee.scoreDetails.initiative}
+          scoreDetails={selected?.scoreDetails.initiative}
         />
         <ScoreDetailsFormInput
           register={register}
           title="Housekeeping, Safety and Cost Consciousness"
           scoreLabel="safety"
-          scoreDetails={employee.scoreDetails.safety}
+          scoreDetails={selected?.scoreDetails.safety}
         />
       </div>
-      <input type="submit" />
+
+
+      <div className="p-4">
+        <h2 className="text-[18px] font-semibold mb-8">Performance Summary</h2>
+        <div className="form-div mt-4">
+          <label className="form-label text-black text-[14px] font-medium">Strengths of the employee</label>
+          <textarea {...register("performanceSummary.strengthsOfEmployee")} rows={5} className="form-input" />
+        </div>
+        <div className="form-div mt-4">
+          <label className="form-label text-black text-[14px] font-medium">Weaknesses of the employee</label>
+          <textarea {...register("performanceSummary.weaknessOfEmployee")} rows={5} className="form-input" />
+        </div>
+        <div className="form-div mt-4">
+          <label className="form-label text-black text-[14px] font-medium">Recommendations for improvement of performance and personal (job related) skills</label>
+          <textarea {...register("performanceSummary.improvementNeeds")} rows={5} className="form-input" />
+        </div>
+        <div className="form-div mt-4">
+          <label className="form-label text-black text-[14px] font-medium">What action plans regarding future work improvements, career development, etc have been discussed in the appraisal interview?</label>
+          <textarea {...register("performanceSummary.actionPlan")} rows={5} className="form-input" />
+        </div>
+      </div>
+
+
+      <div className="p-4 mt-10">
+        <h2 className="text-[18px] font-semibold mb-8">Training</h2>
+        <div className="form-div mt-4">
+          <label className="form-label text-black text-[14px] font-medium">List any formal training employee has attended in the past one year and any training planned for the next one year.</label>
+          <textarea {...register("trainingComment")} rows={5} className="form-input" />
+        </div>
+      </div>
+
+      <div className="flex justify-end p-4">
+        <button type="submit"
+          className="bg-blue-500 rounded-xl text-[#fff] px-4 py-2 cursor-pointer hover:bg-pink-500">
+          Submit
+        </button>
+      </div>
     </form>
   );
 }

@@ -2,12 +2,11 @@ import { Dispatch, SetStateAction } from "react";
 
 export interface IConfig {
   excelpath: string
-  // periodFrom: string
-  // periodTo: string
   year: string
   period: string
   sheet: string
   supervisor: string
+  jsondir: string
 }
 
 export interface IConfigProps {

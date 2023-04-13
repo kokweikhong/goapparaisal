@@ -1,24 +1,29 @@
-import React, { useEffect, useState } from "react";
-import { OpenDirForExcelFile, GetExcelSheets, InitEmployeeData } from "../../wailsjs/go/main/App";
-// import { IEmployeeProps } from "../variables/employee";
-import { useConfigContext } from "../context/config";
-import { useEmployeeContext } from "../context/employee";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import {
+  OpenDirForExcelFile, GetExcelSheets,
+  InitEmployeeData, OpenDirectory,
+  SaveEmployeeDataToJson
+} from "../../wailsjs/go/main/App";
 import { IEmployee } from "../variables/employee";
+import { IConfig } from "../variables/types";
 
-// type Props = IEmployeeProps
+export interface IConfigurationFormProps {
+  config: IConfig
+  setConfig: Dispatch<SetStateAction<IConfig>>
+  raw: IEmployee[]
+  setRaw: Dispatch<SetStateAction<IEmployee[]>>
+  data: IEmployee[]
+  setData: Dispatch<SetStateAction<IEmployee[]>>
+}
 
-const ConfigurationForm: React.FC = () => {
-  const { config, setConfig } = useConfigContext()
-  const { data, setData } = useEmployeeContext()
+const ConfigurationForm: React.FC<IConfigurationFormProps> = ({config, setConfig, raw, setRaw, data, setData}) => {
   const [sheets, setSheets] = useState<string[]>([])
   const [supervisors, setSupervisors] = useState<string[]>([])
   let years: string[] = [0, 1, -1].map(i => (String(new Date().getFullYear() - i)))
 
-  console.log(data.raw)
-
   useEffect(() => {
     const period: string = '01/07/' + String(new Date().getFullYear() - 1) + " to 30/06/" + String(new Date().getFullYear())
-    setConfig({ ...config, period: period })
+    setConfig(prev => ({ ...prev, period: period }))
   }, [])
 
   const handleYearOnChange = (year: string) => {
@@ -31,17 +36,30 @@ const ConfigurationForm: React.FC = () => {
     setConfig(prev => ({ ...prev, excelpath: res }))
     setSheets(sheets)
   }
+
   const handleSheetChange = async () => {
     const res = await InitEmployeeData(config.excelpath, config.sheet)
-    setData(prev => ({ ...prev, data: { ...prev.data, raw: res } }))
+    setRaw(res)
+    setData(data)
     let supers: string[] = res.map(item => (item.supervisor))
     supers = [...new Set(supers)]
     supers = ["ALL"].concat(supers)
     setSupervisors(supers)
   }
+
   const handleSupervisorChange = () => {
-    const filteredData = data.raw.filter(ele => { return (config.supervisor === "ALL" ? ele : ele.supervisor === config.supervisor) })
-    setData(prev => ({ ...prev, data: { ...prev.data, filtered: filteredData } }))
+    const filteredData = raw.filter(ele => { return (config.supervisor === "ALL" ? ele : ele.supervisor === config.supervisor) })
+    setData(filteredData)
+  }
+
+  const handleOpenDirectory = async () => {
+    const res = await OpenDirectory()
+    setConfig({ ...config, jsondir: res })
+  }
+
+  const handleExportToJsonFile = async () => {
+    const dataWithDateReview = data.map(ele => ({ ...ele, periodUnderReview: config.period }))
+    await SaveEmployeeDataToJson(dataWithDateReview, config.jsondir)
   }
 
   return (
@@ -88,6 +106,16 @@ const ConfigurationForm: React.FC = () => {
           <button onClick={handleSupervisorChange}
             className="text-[#fff] uppercase font-medium tracking-wider bg-blue-500 py-2 px-4 rounded-md">Get Data</button>
         </div>
+      </div>
+      <div className="flex w-full justify-between items-stretch gap-4">
+        <label className="font-semibold self-center">Json Output Directory :</label>
+        <input type="text" value={config?.jsondir} disabled className="grow" />
+        <button onClick={handleOpenDirectory} className="text-[#fff] uppercase font-medium tracking-wider bg-blue-500 py-2 px-4 rounded-md">Browse</button>
+        <button onClick={handleExportToJsonFile}
+          disabled={data?.length < 2 ? true : false}
+          className={`${data?.length < 2 ? 'bg-gray-500' : 'bg-pink-500'} text-[#fff] uppercase font-medium tracking-wider py-2 px-4 rounded-md`}>
+          Export
+        </button>
       </div>
     </div >
   )
