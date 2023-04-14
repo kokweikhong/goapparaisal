@@ -5,6 +5,8 @@ export function GenerateAllEmployeeData(arg1:Array<any>):Promise<Array<any>>;
 
 export function GenerateAverageScores(arg1:any):Promise<any>;
 
+export function GenerateNonExecAppraisalPDF(arg1:any,arg2:string):Promise<void>;
+
 export function GenerateScoreDetails(arg1:any):Promise<any>;
 
 export function GetDataFromExcel(arg1:string,arg2:string):Promise<Array<any>>;

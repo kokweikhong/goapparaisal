@@ -10,6 +10,10 @@ export function GenerateAverageScores(arg1) {
   return window['go']['main']['App']['GenerateAverageScores'](arg1);
 }
 
+export function GenerateNonExecAppraisalPDF(arg1, arg2) {
+  return window['go']['main']['App']['GenerateNonExecAppraisalPDF'](arg1, arg2);
+}
+
 export function GenerateScoreDetails(arg1) {
   return window['go']['main']['App']['GenerateScoreDetails'](arg1);
 }

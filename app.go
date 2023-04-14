@@ -104,3 +104,9 @@ func (a *App) UpdateEmployeeDataToJson(data []*backend.Employee, jsonFile string
 	}
 	return ioutil.WriteFile(jsonFile, b, 0644)
 }
+
+func (a *App) GenerateNonExecAppraisalPDF(data *backend.Employee, dir string) error {
+    return backend.GenerateNonExecAppraisalPDF(data, dir)
+}
+
+

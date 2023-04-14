@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <ul className="flex justify-end items-center gap-6 uppercase font-medium underline">
           <Link to="/">Configuration</Link>
           <Link to="/records">Records</Link>
-          <Link to="/records">Report</Link>
+          <Link to="/report">Report</Link>
         </ul>
       </nav>
     </>
