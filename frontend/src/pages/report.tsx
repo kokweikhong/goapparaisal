@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import { OpenDirForExcelFile, ReadEmployeeDataFromJsonFile, GenerateNonExecAppraisalPDF, OpenDirectory } from "../../wailsjs/go/main/App";
+import {
+  OpenDirForExcelFile, ReadEmployeeDataFromJsonFile,
+  GenerateNonExecAppraisalPDF, OpenDirectory,
+  MessageDialog
+} from "../../wailsjs/go/main/App";
 import { IEmployee } from "../variables/employee";
+import Loading from "../components/Loading";
 
 const ReportPage = () => {
   const [jsonFile, setJsonFile] = useState<string>('')
   const [data, setData] = useState<IEmployee[]>([])
   const [outputDir, setOutputDir] = useState<string>('')
   const [selected, setSelected] = useState<IEmployee[]>([])
+  const [loading, setLoading] = useState<boolean>(false)
 
   const handleOpenFile = async () => {
     const res = await OpenDirForExcelFile()
@@ -14,8 +20,16 @@ const ReportPage = () => {
   }
 
   const handleReadJsonFile = async () => {
-    const res = await ReadEmployeeDataFromJsonFile(jsonFile) as unknown as IEmployee[]
-    setData(res)
+    setLoading(true)
+    try {
+      const res = await ReadEmployeeDataFromJsonFile(jsonFile) as unknown as IEmployee[]
+      setData(res)
+      await MessageDialog("info", "Read Data From Json File", `Successfully read data from ${jsonFile}`)
+    } catch (e) {
+      await MessageDialog("error", "Read Data From Json File", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleCheckboxChecked = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -48,14 +62,23 @@ const ReportPage = () => {
     setOutputDir(res)
   }
 
-  const handleGenerateSelectedPFG = () => {
-    selected.forEach(async (ele) => {
-      await GenerateNonExecAppraisalPDF(ele, outputDir)
-    })
+  const handleGenerateSelectedPFG = async () => {
+    setLoading(true)
+    try {
+      selected.forEach(async (ele) => {
+        await GenerateNonExecAppraisalPDF(ele, outputDir)
+      })
+      await MessageDialog("info", "Generate PDF", `Successfully generate ${selected.length} PDFs to ${outputDir}`)
+    } catch (e) {
+      await MessageDialog("error", "Generate PDF", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
     <div>
+      <Loading isShow={loading} />
 
       <div className="border border-dashed border-black p-4 flex flex-col gap-2">
         <div className="flex w-full justify-between items-stretch gap-4">
@@ -75,7 +98,7 @@ const ReportPage = () => {
       </div>
 
 
-      <div>
+      <div className="mb-8">
         <div className="flex gap-3 border border-double p-4 my-4 border-black">
           <button
             className="bg-blue-500 text-[#fff] font-medium px-4 py-2 rounded-xl uppercase"

@@ -2,18 +2,18 @@ import React, { Dispatch, SetStateAction, useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { IEmployee } from "../variables/employee";
 import { ScoreDetailsFormInput } from "./ScoreDetailsFormInput";
-import { GenerateAverageScores } from "../../wailsjs/go/main/App";
+import { GenerateAverageScores, MessageDialog } from "../../wailsjs/go/main/App";
 
 export interface IEmployeeFormProps {
   selected: IEmployee
   setSelected: Dispatch<SetStateAction<IEmployee>>
   data: IEmployee[]
   setData: Dispatch<SetStateAction<IEmployee[]>>
+  setLoading: Dispatch<SetStateAction<boolean>>
 }
 
 
-export const EmployeeForm: React.FC<IEmployeeFormProps> = ({ selected, setSelected, data, setData }) => {
-  console.log(selected)
+export const EmployeeForm: React.FC<IEmployeeFormProps> = ({ setLoading, selected, setSelected, data, setData }) => {
   const { register, handleSubmit, reset } = useForm<IEmployee>({
     defaultValues: {}
   });
@@ -21,14 +21,21 @@ export const EmployeeForm: React.FC<IEmployeeFormProps> = ({ selected, setSelect
     const updateData = data.map(e => (
       e.employeeCode === formData.employeeCode ? formData : e
     ))
-    alert(selected.employeeName + " data saved!")
     setData(updateData)
   }
 
   const handleGenerateAverageScores = async () => {
-    const employeeAfterAverageScore = await GenerateAverageScores(selected) as unknown as IEmployee
-    setSelected(employeeAfterAverageScore)
-    reset(employeeAfterAverageScore)
+    setLoading(true)
+    try {
+      const employeeAfterAverageScore = await GenerateAverageScores(selected) as unknown as IEmployee
+      setSelected(employeeAfterAverageScore)
+      reset(employeeAfterAverageScore)
+      await MessageDialog("info", "Generate Appraisal Data", `Successfully generate data for ${selected.employeeName}`)
+    } catch (e) {
+      await MessageDialog("error", "Generate Appraisal Data", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   useEffect(() => {

@@ -82,15 +82,7 @@ func (a *App) GenerateAllEmployeeData(data []*backend.Employee) []*backend.Emplo
 }
 
 func (a *App) SaveEmployeeDataToJson(data []*backend.Employee, jsondir string) error {
-	err := backend.SaveEmployeeDataToJsonFile(data, jsondir)
-	if err != nil {
-		return err
-	}
-	_, err = runtime.MessageDialog(a.ctx, runtime.MessageDialogOptions{
-		Title:   "Export To Json",
-		Message: "Exported Json File to " + jsondir,
-	})
-	return err
+	return backend.SaveEmployeeDataToJsonFile(data, jsondir)
 }
 
 func (a *App) ReadEmployeeDataFromJsonFile(jsonFile string) ([]*backend.Employee, error) {
@@ -106,7 +98,34 @@ func (a *App) UpdateEmployeeDataToJson(data []*backend.Employee, jsonFile string
 }
 
 func (a *App) GenerateNonExecAppraisalPDF(data *backend.Employee, dir string) error {
-    return backend.GenerateNonExecAppraisalPDF(data, dir)
+	return backend.GenerateNonExecAppraisalPDF(data, dir)
 }
 
+func (a *App) MessageDialog(mtype, title, message string) (string, error) {
+	var dtype runtime.DialogType
+	switch mtype {
+	case "info":
+		dtype = runtime.InfoDialog
+	case "error":
+		dtype = runtime.ErrorDialog
+	default:
+		dtype = runtime.InfoDialog
+	}
+	return runtime.MessageDialog(a.ctx, runtime.MessageDialogOptions{
+		Type:    dtype,
+		Title:   title,
+		Message: message,
+	})
+}
 
+func (a *App) SelectMultipleFiles() ([]string, error) {
+	return runtime.OpenMultipleFilesDialog(a.ctx, runtime.OpenDialogOptions{
+		Title: "Select Appraisal PDF File",
+		Filters: []runtime.FileFilter{
+			{
+				DisplayName: "PDF (*.pdf;*.PDF;)",
+				Pattern:     "*.pdf;*.PDF;",
+			},
+		},
+	})
+}

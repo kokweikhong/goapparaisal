@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import ConfigurationForm from "../components/ConfigurationForm";
 import { IConfig } from "../variables/types";
 import { IEmployee } from "../variables/employee";
+import Loading from "../components/Loading";
 
 
 const ConfigPage: React.FC = () => {
+  const [loading, setLoading] = useState<boolean>(false)
 
   const [config, setConfig] = useState<IConfig>({
     excelpath: "",
@@ -19,8 +21,9 @@ const ConfigPage: React.FC = () => {
   const [raw, setRaw] = useState<IEmployee[]>([])
   return (
     <div>
+      <Loading isShow={loading} />
       <div>
-        <ConfigurationForm config={config} setConfig={setConfig} raw={raw} setRaw={setRaw} data={data} setData={setData} />
+        <ConfigurationForm setLoading={setLoading} config={config} setConfig={setConfig} raw={raw} setRaw={setRaw} data={data} setData={setData} />
       </div>
       <div className="my-8 font-semibold text-xl">{`Total ${data?.length}`}</div>
       <div>

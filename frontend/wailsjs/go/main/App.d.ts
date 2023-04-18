@@ -17,6 +17,8 @@ export function Greet(arg1:string):Promise<string>;
 
 export function InitEmployeeData(arg1:string,arg2:string):Promise<Array<any>>;
 
+export function MessageDialog(arg1:string,arg2:string,arg3:string):Promise<string>;
+
 export function OpenDirForExcelFile():Promise<string>;
 
 export function OpenDirectory():Promise<string>;
@@ -26,5 +28,7 @@ export function ReadEmployeeDataFromJsonFile(arg1:string):Promise<Array<any>>;
 export function ResetScoreDetails(arg1:any):Promise<any>;
 
 export function SaveEmployeeDataToJson(arg1:Array<any>,arg2:string):Promise<void>;
+
+export function SelectMultipleFiles():Promise<Array<string>>;
 
 export function UpdateEmployeeDataToJson(arg1:Array<any>,arg2:string):Promise<void>;

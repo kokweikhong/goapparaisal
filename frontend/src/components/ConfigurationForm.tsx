@@ -2,7 +2,7 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import {
   OpenDirForExcelFile, GetExcelSheets,
   InitEmployeeData, OpenDirectory,
-  SaveEmployeeDataToJson
+  SaveEmployeeDataToJson, MessageDialog
 } from "../../wailsjs/go/main/App";
 import { IEmployee } from "../variables/employee";
 import { IConfig } from "../variables/types";
@@ -14,9 +14,10 @@ export interface IConfigurationFormProps {
   setRaw: Dispatch<SetStateAction<IEmployee[]>>
   data: IEmployee[]
   setData: Dispatch<SetStateAction<IEmployee[]>>
+  setLoading: Dispatch<SetStateAction<boolean>>
 }
 
-const ConfigurationForm: React.FC<IConfigurationFormProps> = ({config, setConfig, raw, setRaw, data, setData}) => {
+const ConfigurationForm: React.FC<IConfigurationFormProps> = ({ config, setConfig, raw, setRaw, data, setData, setLoading }) => {
   const [sheets, setSheets] = useState<string[]>([])
   const [supervisors, setSupervisors] = useState<string[]>([])
   let years: string[] = [0, 1, -1].map(i => (String(new Date().getFullYear() - i)))
@@ -31,25 +32,45 @@ const ConfigurationForm: React.FC<IConfigurationFormProps> = ({config, setConfig
   }
 
   const handleOpenExcelFile = async () => {
-    const res = await OpenDirForExcelFile()
-    const sheets = await GetExcelSheets(res)
-    setConfig(prev => ({ ...prev, excelpath: res }))
-    setSheets(sheets)
+    setLoading(true)
+    try {
+      const res = await OpenDirForExcelFile()
+      const sheets = await GetExcelSheets(res)
+      setConfig(prev => ({ ...prev, excelpath: res }))
+      setSheets(sheets)
+      await MessageDialog("info", "Read Appraisal Excel", "Get Excel Sheets Successfully.")
+    } catch (e) {
+      await MessageDialog("error", "Read Appraisal Excel", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleSheetChange = async () => {
-    const res = await InitEmployeeData(config.excelpath, config.sheet)
-    setRaw(res)
-    setData(data)
-    let supers: string[] = res.map(item => (item.supervisor))
-    supers = [...new Set(supers)]
-    supers = ["ALL"].concat(supers)
-    setSupervisors(supers)
+    setLoading(true)
+    try {
+      const res = await InitEmployeeData(config.excelpath, config.sheet)
+      setRaw(res)
+      setData(data)
+      let supers: string[] = res.map(item => (item.supervisor))
+      supers = [...new Set(supers)]
+      supers = ["ALL"].concat(supers)
+      setSupervisors(supers)
+      await MessageDialog("info", "Get Supervisor List", "Get Supervisor Listing Successfully.")
+    } catch (e) {
+      await MessageDialog("error", "Get Supervisor List", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
-  const handleSupervisorChange = () => {
+  const handleSupervisorChange = async () => {
+    setLoading(true)
     const filteredData = raw.filter(ele => { return (config.supervisor === "ALL" ? ele : ele.supervisor === config.supervisor) })
     setData(filteredData)
+    await MessageDialog("info", "Get Appraisal Name list", `Get ${config.supervisor}'s Appraisal Name List Successffuly.`)
+
+    setLoading(false)
   }
 
   const handleOpenDirectory = async () => {
@@ -58,8 +79,16 @@ const ConfigurationForm: React.FC<IConfigurationFormProps> = ({config, setConfig
   }
 
   const handleExportToJsonFile = async () => {
-    const dataWithDateReview = data.map(ele => ({ ...ele, periodUnderReview: config.period }))
-    await SaveEmployeeDataToJson(dataWithDateReview, config.jsondir)
+    setLoading(true)
+    try {
+      const dataWithDateReview = data.map(ele => ({ ...ele, periodUnderReview: config.period }))
+      await SaveEmployeeDataToJson(dataWithDateReview, config.jsondir)
+      await MessageDialog("info", "Export To Json File", `Export to ${config.jsondir} successfully.`)
+    } catch (e) {
+      await MessageDialog("error", "Export To Json File", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (

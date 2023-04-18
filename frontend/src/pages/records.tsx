@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { EmployeeCard } from "../components/EmployeeCard";
 import {
   OpenDirForExcelFile, GenerateAllEmployeeData,
-  ReadEmployeeDataFromJsonFile, UpdateEmployeeDataToJson
+  ReadEmployeeDataFromJsonFile, UpdateEmployeeDataToJson, MessageDialog
 } from "../../wailsjs/go/main/App";
 import { IEmployee } from "../variables/employee";
 import { EmployeeForm } from "../components/EmployeeForm";
 import { initialEmployeeData } from "../variables/employee";
+import Loading from "../components/Loading";
 
 
 const RecordsPage: React.FC = () => {
@@ -14,27 +15,54 @@ const RecordsPage: React.FC = () => {
   const [jsonFile, setJsonFile] = useState<string>('')
   const [visible, setVisible] = useState<boolean>(false)
   const [selected, setSelected] = useState<IEmployee>(initialEmployeeData)
+  const [loading, setLoading] = useState<boolean>(false)
+
   const handleOpenFile = async () => {
     const res = await OpenDirForExcelFile()
     setJsonFile(res)
   }
 
   const handleReadJsonFile = async () => {
-    const res = await ReadEmployeeDataFromJsonFile(jsonFile)
-    setData(res)
+    setLoading(true)
+    try {
+      const res = await ReadEmployeeDataFromJsonFile(jsonFile)
+      setData(res)
+      await MessageDialog("info", "Read Data From Json File", `Read data from ${jsonFile} successfully.`)
+    } catch (e) {
+      await MessageDialog("error", "Read Data From Json File", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleGenerateAllEmployeeData = async () => {
-    const generatedData = await GenerateAllEmployeeData(data) as unknown as IEmployee[]
-    setData(generatedData)
+    setLoading(true)
+    try {
+      const generatedData = await GenerateAllEmployeeData(data) as unknown as IEmployee[]
+      setData(generatedData)
+      await MessageDialog("info", "Generate all employees' data", `Generated ${data.length} employee data successfully.`)
+    } catch (e) {
+      await MessageDialog("error", "Generate all employees' data", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleSaveDataToJsonFile = async () => {
-    await UpdateEmployeeDataToJson(data, jsonFile)
+    setLoading(true)
+    try {
+      await UpdateEmployeeDataToJson(data, jsonFile)
+      await MessageDialog("info", "Save Data To Json File", `Successfully save data to ${jsonFile}`)
+    } catch (e) {
+      await MessageDialog("error", "Save Data To Json File", `${e}`)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
     <div>
+      <Loading isShow={loading} />
       <div className="border border-dashed border-black p-4">
         <div className="flex w-full justify-between items-stretch gap-4">
           <label className="font-semibold self-center">Json Output Directory :</label>
@@ -70,7 +98,7 @@ const RecordsPage: React.FC = () => {
         <div className={`${visible ? "block" : "hidden"} p-10 absolute w-full h-full overflow-y-auto top-0 left-0 z-10 bg-white/90`}>
           <button onClick={() => setVisible(!visible)}
             className='absolute top-0 right-5 font-black text-xl'>X</button>
-          <EmployeeForm selected={selected} setSelected={setSelected} data={data} setData={setData} />
+          <EmployeeForm setLoading={setLoading} selected={selected} setSelected={setSelected} data={data} setData={setData} />
         </div>
       </div>
     </div>

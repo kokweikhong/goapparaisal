@@ -34,6 +34,10 @@ export function InitEmployeeData(arg1, arg2) {
   return window['go']['main']['App']['InitEmployeeData'](arg1, arg2);
 }
 
+export function MessageDialog(arg1, arg2, arg3) {
+  return window['go']['main']['App']['MessageDialog'](arg1, arg2, arg3);
+}
+
 export function OpenDirForExcelFile() {
   return window['go']['main']['App']['OpenDirForExcelFile']();
 }
@@ -52,6 +56,10 @@ export function ResetScoreDetails(arg1) {
 
 export function SaveEmployeeDataToJson(arg1, arg2) {
   return window['go']['main']['App']['SaveEmployeeDataToJson'](arg1, arg2);
+}
+
+export function SelectMultipleFiles() {
+  return window['go']['main']['App']['SelectMultipleFiles']();
 }
 
 export function UpdateEmployeeDataToJson(arg1, arg2) {
