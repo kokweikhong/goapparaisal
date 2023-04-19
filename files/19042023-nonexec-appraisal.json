@@ -1,0 +1,2498 @@
+[
+  {
+    "employeeCode": "00993629",
+    "employeeName": "POH BEE HONG",
+    "designation": "SENIOR TECHNICAL OPERATOR",
+    "dateJoin": "07-Oct-1999",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 68,
+    "rating": 2,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Shows a commitment to improving attendance and punctuality, and actively seeks feedback on how to better meet expectations."
+      },
+      "initiative": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Occasionally contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Requires guidance on more complex tasks."
+      },
+      "qualityOfWork": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Work quality is inconsistent and may vary in accuracy and completeness."
+      },
+      "quantityOfWork": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Consistently meets job requirements but could benefit from additional training or coaching."
+      },
+      "responsibility": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Generally maintains a positive attitude towards responsibility and accountability."
+      },
+      "safety": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Reports safety concerns and potential hazards when they arise"
+      },
+      "teamwork": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Can be a hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20005184",
+    "employeeName": "WONG HWEE CHIN",
+    "designation": "TECHNICAL OPERATOR II",
+    "dateJoin": "24-Apr-2000",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 68,
+    "rating": 2,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Shows a commitment to improving attendance and punctuality, and actively seeks feedback on how to better meet expectations."
+      },
+      "initiative": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Occasionally contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Requires guidance on more complex tasks."
+      },
+      "qualityOfWork": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Work quality is inconsistent and may vary in accuracy and completeness."
+      },
+      "quantityOfWork": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Consistently meets job requirements but could benefit from additional training or coaching."
+      },
+      "responsibility": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Generally maintains a positive attitude towards responsibility and accountability."
+      },
+      "safety": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Reports safety concerns and potential hazards when they arise"
+      },
+      "teamwork": {
+        "overall": 6.8,
+        "scores": [
+          6.8,
+          6.8,
+          6.8
+        ],
+        "comment": "Can be a hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20034228",
+    "employeeName": "KO PING HOCK",
+    "designation": "SNR ENGINEERING ASST (PRO)",
+    "dateJoin": "23-Jun-2003",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 85,
+    "rating": 4,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Attendance and punctuality are outstanding. Employee consistently arrives early and is always present for work, even in adverse weather conditions or other unexpected circumstances."
+      },
+      "initiative": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently finds ways to improve processes and workflows."
+      },
+      "qualityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently produces high-quality work that is reliable and consistent."
+      },
+      "quantityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Produces work output that is consistently of the highest quality and reliability."
+      },
+      "responsibility": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Can be relied upon for all tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Takes initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Is a strong asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20054789",
+    "employeeName": "YEE SAM MOI",
+    "designation": "TECHNICAL OPERATOR II",
+    "dateJoin": "28-Apr-2005",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 75,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20077611",
+    "employeeName": "WONG SWEE MENG",
+    "designation": "SNR ENGINEERING ASST II",
+    "dateJoin": "26-Feb-2007",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 85,
+    "rating": 4,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Attendance and punctuality are outstanding. Employee consistently arrives early and is always present for work, even in adverse weather conditions or other unexpected circumstances."
+      },
+      "initiative": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently finds ways to improve processes and workflows."
+      },
+      "qualityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently produces high-quality work that is reliable and consistent."
+      },
+      "quantityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Produces work output that is consistently of the highest quality and reliability."
+      },
+      "responsibility": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Can be relied upon for all tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Takes initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Is a strong asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20129403",
+    "employeeName": "SHASHITHARAN BALASUBRAMANIAM",
+    "designation": "SNR ENGINEERING ASST I",
+    "dateJoin": "03-Sep-2012",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 85,
+    "rating": 4,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Attendance and punctuality are outstanding. Employee consistently arrives early and is always present for work, even in adverse weather conditions or other unexpected circumstances."
+      },
+      "initiative": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently finds ways to improve processes and workflows."
+      },
+      "qualityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently produces high-quality work that is reliable and consistent."
+      },
+      "quantityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Produces work output that is consistently of the highest quality and reliability."
+      },
+      "responsibility": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Can be relied upon for all tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Takes initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Is a strong asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20129406",
+    "employeeName": "CHONG HOCK LONG",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "17-Sep-2012",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 85,
+    "rating": 4,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Attendance and punctuality are outstanding. Employee consistently arrives early and is always present for work, even in adverse weather conditions or other unexpected circumstances."
+      },
+      "initiative": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently finds ways to improve processes and workflows."
+      },
+      "qualityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Consistently produces high-quality work that is reliable and consistent."
+      },
+      "quantityOfWork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Produces work output that is consistently of the highest quality and reliability."
+      },
+      "responsibility": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Can be relied upon for all tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Takes initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 8.5,
+        "scores": [
+          8.5,
+          8.5,
+          8.5
+        ],
+        "comment": "Is a strong asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20139574",
+    "employeeName": "CHONG CHIU FOONG",
+    "designation": "TECHNICAL OPERATOR II",
+    "dateJoin": "17-Jun-2013",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 81,
+    "rating": 4,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Attendance and punctuality are outstanding. Employee consistently arrives early and is always present for work, even in adverse weather conditions or other unexpected circumstances."
+      },
+      "initiative": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Consistently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Consistently finds ways to improve processes and workflows."
+      },
+      "qualityOfWork": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Consistently produces high-quality work that is reliable and consistent."
+      },
+      "quantityOfWork": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Produces work output that is consistently of the highest quality and reliability."
+      },
+      "responsibility": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Can be relied upon for all tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Takes initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 8.1,
+        "scores": [
+          8.1,
+          8.1,
+          8.1
+        ],
+        "comment": "Is a strong asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20139589",
+    "employeeName": "CHONG MEI CHIN",
+    "designation": "TECHNICAL OPERATOR II",
+    "dateJoin": "24-Jun-2013",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 70,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7,
+        "scores": [
+          7,
+          7,
+          7
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20139632",
+    "employeeName": "LEAN CHUI PENG",
+    "designation": "TECHNICAL OPERATOR II",
+    "dateJoin": "05-Aug-2013",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 82,
+    "rating": 4,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Attendance and punctuality are outstanding. Employee consistently arrives early and is always present for work, even in adverse weather conditions or other unexpected circumstances."
+      },
+      "initiative": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Consistently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Consistently finds ways to improve processes and workflows."
+      },
+      "qualityOfWork": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Consistently produces high-quality work that is reliable and consistent."
+      },
+      "quantityOfWork": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Produces work output that is consistently of the highest quality and reliability."
+      },
+      "responsibility": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Can be relied upon for all tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Takes initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 8.2,
+        "scores": [
+          8.2,
+          8.2,
+          8.2
+        ],
+        "comment": "Is a strong asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20150033",
+    "employeeName": "KENNY BOON FOOK SENG",
+    "designation": "TECHNICAL OPERATOR II",
+    "dateJoin": "27-Apr-2015",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 88,
+    "rating": 4,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Attendance and punctuality are outstanding. Employee consistently arrives early and is always present for work, even in adverse weather conditions or other unexpected circumstances."
+      },
+      "initiative": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Consistently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Consistently finds ways to improve processes and workflows."
+      },
+      "qualityOfWork": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Consistently produces high-quality work that is reliable and consistent."
+      },
+      "quantityOfWork": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Produces work output that is consistently of the highest quality and reliability."
+      },
+      "responsibility": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Can be relied upon for all tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Takes initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 8.8,
+        "scores": [
+          8.8,
+          8.8,
+          8.8
+        ],
+        "comment": "Is a strong asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20190560",
+    "employeeName": "SHEN MENGSHI",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "14-Oct-2019",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 73,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.3,
+        "scores": [
+          7.3,
+          7.3,
+          7.3
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20190589",
+    "employeeName": "ZHANG LEI",
+    "designation": "ENGINEERING ASST",
+    "dateJoin": "25-Nov-2019",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 75,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210723",
+    "employeeName": "TAY ZHAN KAI",
+    "designation": "ENGINEERING ASST",
+    "dateJoin": "01-Feb-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 79,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210727",
+    "employeeName": "LIU JING",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "01-Feb-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 59,
+    "rating": 2,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Shows a commitment to improving attendance and punctuality, and actively seeks feedback on how to better meet expectations."
+      },
+      "initiative": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Occasionally contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Requires guidance on more complex tasks."
+      },
+      "qualityOfWork": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Work quality is inconsistent and may vary in accuracy and completeness."
+      },
+      "quantityOfWork": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Consistently meets job requirements but could benefit from additional training or coaching."
+      },
+      "responsibility": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Generally maintains a positive attitude towards responsibility and accountability."
+      },
+      "safety": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Reports safety concerns and potential hazards when they arise"
+      },
+      "teamwork": {
+        "overall": 5.9,
+        "scores": [
+          5.9,
+          5.9,
+          5.9
+        ],
+        "comment": "Can be a hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210741",
+    "employeeName": "DU YIMAN",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "08-Mar-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 55,
+    "rating": 2,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Shows a commitment to improving attendance and punctuality, and actively seeks feedback on how to better meet expectations."
+      },
+      "initiative": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Occasionally contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Requires guidance on more complex tasks."
+      },
+      "qualityOfWork": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Work quality is inconsistent and may vary in accuracy and completeness."
+      },
+      "quantityOfWork": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Consistently meets job requirements but could benefit from additional training or coaching."
+      },
+      "responsibility": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Generally maintains a positive attitude towards responsibility and accountability."
+      },
+      "safety": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Reports safety concerns and potential hazards when they arise"
+      },
+      "teamwork": {
+        "overall": 5.5,
+        "scores": [
+          5.5,
+          5.5,
+          5.5
+        ],
+        "comment": "Can be a hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210840",
+    "employeeName": "SU RONGSEN",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "06-Sep-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 75,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210842",
+    "employeeName": "ZHANG NANNAN",
+    "designation": "ENGINEERING ASST",
+    "dateJoin": "06-Sep-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 79,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.9,
+        "scores": [
+          7.9,
+          7.9,
+          7.9
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210911",
+    "employeeName": "ZHANG QUAN",
+    "designation": "TECHNICIAN II",
+    "dateJoin": "22-Nov-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 78,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.8,
+        "scores": [
+          7.8,
+          7.8,
+          7.8
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210927",
+    "employeeName": "MOHD AZAHARI SYAZWAN BIN ABDUL HAMID",
+    "designation": "ENGINEERING ASST",
+    "dateJoin": "13-Dec-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 75,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20210933",
+    "employeeName": "CHE AIMAN ZAFRAN BIN CHE MAZLAN",
+    "designation": "ENGINEERING ASST",
+    "dateJoin": "20-Dec-2021",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 75,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20220944",
+    "employeeName": "CHAI YUFEI",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "10-Jan-2022",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 75,
+    "rating": 3,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets or exceeds attendance and punctuality requirements, and serves as a role model for other team members."
+      },
+      "initiative": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Frequently contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Proactively seeks out additional training to improve job knowledge."
+      },
+      "qualityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Work quality is generally consistent and reliable."
+      },
+      "quantityOfWork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Consistently meets job requirements and is able to effectively prioritize work assignments."
+      },
+      "responsibility": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be relied upon for most tasks and assignments with minimal supervision or guidance."
+      },
+      "safety": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Takes some initiative to improve the cleanliness, safety, or cost-effectiveness of the workplace"
+      },
+      "teamwork": {
+        "overall": 7.5,
+        "scores": [
+          7.5,
+          7.5,
+          7.5
+        ],
+        "comment": "Can be an asset to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20220950",
+    "employeeName": "KAMARUL AZHAR BIN KOMARUDDEN",
+    "designation": "ENGINEERING ASST",
+    "dateJoin": "10-Jan-2022",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 65,
+    "rating": 2,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Shows a commitment to improving attendance and punctuality, and actively seeks feedback on how to better meet expectations."
+      },
+      "initiative": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Occasionally contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Requires guidance on more complex tasks."
+      },
+      "qualityOfWork": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Work quality is inconsistent and may vary in accuracy and completeness."
+      },
+      "quantityOfWork": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Consistently meets job requirements but could benefit from additional training or coaching."
+      },
+      "responsibility": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Generally maintains a positive attitude towards responsibility and accountability."
+      },
+      "safety": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Reports safety concerns and potential hazards when they arise"
+      },
+      "teamwork": {
+        "overall": 6.5,
+        "scores": [
+          6.5,
+          6.5,
+          6.5
+        ],
+        "comment": "Can be a hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20220955",
+    "employeeName": "TENG DAYONG",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "24-Jan-2022",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 62,
+    "rating": 2,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Shows a commitment to improving attendance and punctuality, and actively seeks feedback on how to better meet expectations."
+      },
+      "initiative": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Occasionally contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Requires guidance on more complex tasks."
+      },
+      "qualityOfWork": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Work quality is inconsistent and may vary in accuracy and completeness."
+      },
+      "quantityOfWork": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Consistently meets job requirements but could benefit from additional training or coaching."
+      },
+      "responsibility": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Generally maintains a positive attitude towards responsibility and accountability."
+      },
+      "safety": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Reports safety concerns and potential hazards when they arise"
+      },
+      "teamwork": {
+        "overall": 6.2,
+        "scores": [
+          6.2,
+          6.2,
+          6.2
+        ],
+        "comment": "Can be a hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20220972",
+    "employeeName": "IZZAT SYAHMI BIN MOHD AZAMI",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "07-Feb-2022",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 37,
+    "rating": 1,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Has failed to demonstrate basic punctuality and attendance requirements, resulting in a negative impact on team morale and productivity."
+      },
+      "initiative": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Seldom contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Lack of knowledge is causing delays and errors in work."
+      },
+      "qualityOfWork": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Lacks attention to detail and frequently overlooks important details."
+      },
+      "quantityOfWork": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Consistently struggles to meet even the most basic job requirements and performance expectations."
+      },
+      "responsibility": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Does not take necessary steps to ensure the quality and accuracy of work."
+      },
+      "safety": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Shows little regard for maintaining a safe and efficient work environment"
+      },
+      "teamwork": {
+        "overall": 3.7,
+        "scores": [
+          3.7,
+          3.7,
+          3.7
+        ],
+        "comment": "Is a consistent hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  },
+  {
+    "employeeCode": "20221015",
+    "employeeName": "LI NAN",
+    "designation": "TECHNICIAN I",
+    "dateJoin": "28-Feb-2022",
+    "division": "Operation",
+    "department": "Manufacturing",
+    "supervisor": "CHEAH SIN CHAI, RAYMOND",
+    "periodUnderReview": "01/07/2022 to 30/06/2023",
+    "score": 69,
+    "rating": 2,
+    "scoreDetails": {
+      "attendance": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Shows a commitment to improving attendance and punctuality, and actively seeks feedback on how to better meet expectations."
+      },
+      "initiative": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Occasionally contributes new ideas or suggestions for improvement"
+      },
+      "jobKnowledge": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Requires guidance on more complex tasks."
+      },
+      "qualityOfWork": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Work quality is inconsistent and may vary in accuracy and completeness."
+      },
+      "quantityOfWork": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Consistently meets job requirements but could benefit from additional training or coaching."
+      },
+      "responsibility": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Generally maintains a positive attitude towards responsibility and accountability."
+      },
+      "safety": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Reports safety concerns and potential hazards when they arise"
+      },
+      "teamwork": {
+        "overall": 6.9,
+        "scores": [
+          6.9,
+          6.9,
+          6.9
+        ],
+        "comment": "Can be a hindrance to effective teamwork and cooperation."
+      }
+    },
+    "performanceSummary": {
+      "actionPlan": "Nil",
+      "improvementNeeds": "Nil",
+      "strenghtsOfEmployee": "Nil",
+      "weaknessOfEmployee": "Nil"
+    },
+    "trainingComment": "Nil"
+  }
+]

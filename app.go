@@ -4,7 +4,6 @@ import (
 	"changeme/backend"
 	"context"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 
 	"github.com/wailsapp/wails/v2/pkg/runtime"
@@ -26,11 +25,6 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-// Greet returns a greeting for the given name
-func (a *App) Greet(name string) string {
-	return fmt.Sprintf("Hello %s, It's show time!", name)
-}
-
 func (a *App) OpenDirForExcelFile() (string, error) {
 	return runtime.OpenFileDialog(a.ctx, runtime.OpenDialogOptions{
 		Title: "Select Appraisal Excel or Json File",
@@ -38,6 +32,18 @@ func (a *App) OpenDirForExcelFile() (string, error) {
 			{
 				DisplayName: "Excel or Json (*.xlsx;*.xlsm;*.xls;*.json)",
 				Pattern:     "*.xlsx;*.xlsm;*.xls;*.json",
+			},
+		},
+	})
+}
+
+func (a *App) SelectPrintApplication() (string, error) {
+	return runtime.OpenFileDialog(a.ctx, runtime.OpenDialogOptions{
+		Title: "Select Print Application",
+		Filters: []runtime.FileFilter{
+			{
+				DisplayName: "Exe (*.exe;)",
+				Pattern:     "*.exe",
 			},
 		},
 	})
@@ -128,4 +134,16 @@ func (a *App) SelectMultipleFiles() ([]string, error) {
 			},
 		},
 	})
+}
+
+func (a *App) GetPrinterSettings() (interface{}, error) {
+	return backend.GetPrinterSettings()
+}
+
+func (a *App) PrintPDF(app, file, printerName string) error {
+	return backend.PrintPDF(app, file, printerName)
+}
+
+func (a *App) ConvertJsonToExcel(excelpath, sheet string, data []*backend.Employee) error {
+	return backend.WriteDataToExcel(excelpath, sheet, data)
 }

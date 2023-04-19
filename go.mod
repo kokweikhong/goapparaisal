@@ -3,6 +3,7 @@ module changeme
 go 1.18
 
 require (
+	github.com/jadefox10200/goprint v0.0.0-20220906024909-7bed801d01d2
 	github.com/signintech/gopdf v0.16.1
 	github.com/wailsapp/wails/v2 v2.4.1
 	github.com/xuri/excelize/v2 v2.7.0

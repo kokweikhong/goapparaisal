@@ -13,6 +13,7 @@ const Navbar: React.FC = () => {
         <Link to="/" className={`${location.pathname === '/' && 'text-blue-500'}`} >Configuration</Link>
         <Link to="/records" className={`${location.pathname.match('/records') && 'text-blue-500'}`}>Records</Link>
         <Link to="/report" className={`${location.pathname.match('/report') && 'text-blue-500'}`}>Report</Link>
+        <Link to="/convert" className={`${location.pathname.match('/convert') && 'text-blue-500'}`}>Convert Excel</Link>
         <Link to="/print" className={`${location.pathname.match('/print') && 'text-blue-500'}`}>Print</Link>
       </ul>
     </nav>
