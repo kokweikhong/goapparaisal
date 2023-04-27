@@ -102,86 +102,84 @@ func addPage1(pdf *gopdf.GoPdf, data *Employee) {
 	pdf.SetXY(490, 105)
 	pdf.Text(data.PeriodUnderReview)
 
-	pdf.SetXY(690, 63)
+	pdf.SetXY(695, 63)
 	pdf.Text(data.EmployeeCode)
 
-	pdf.SetXY(690, 77)
+	pdf.SetXY(695, 77)
 	pdf.Text(data.DateJoin)
 
-	pdf.SetXY(690, 91)
+	pdf.SetXY(695, 91)
 	pdf.Text(data.Department)
 
-	pdf.SetFontSize(8)
-
 	jobKnowledge := data.ScoreDetails["jobKnowledge"]
-	pdf.SetXY(621, 211)
+	pdf.SetXY(626, 211)
 	pdf.Text(fmt.Sprintf("%.2f", jobKnowledge.Scores[0]))
-	pdf.SetXY(621, 232)
+	pdf.SetXY(626, 232)
 	pdf.Text(fmt.Sprintf("%.2f", jobKnowledge.Scores[1]))
-	pdf.SetXY(621, 253)
+	pdf.SetXY(626, 253)
 	pdf.Text(fmt.Sprintf("%.2f", jobKnowledge.Scores[2]))
-	pdf.SetXY(621, 275)
+	pdf.SetXY(626, 275)
 	pdf.Text(fmt.Sprintf("%.2f", jobKnowledge.Scores[3]))
-	pdf.SetXY(621, 295)
+	pdf.SetXY(626, 295)
 	pdf.Text(fmt.Sprintf("%.2f", jobKnowledge.Scores[4]))
-	pdf.SetXY(621, 320)
+	pdf.SetXY(626, 320)
 	pdf.Text(fmt.Sprintf("%.2f", jobKnowledge.Overall))
 	var totalScore float64
 	for _, s := range jobKnowledge.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(576, 320)
+	pdf.SetXY(581, 320)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
 
-	pdf.SetXY(650, 200)
+	pdf.SetXY(655, 200)
 	comments := splitTextToWordWrap(pdf, jobKnowledge.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(650, pdf.GetY()+10)
+		pdf.SetXY(655, pdf.GetY()+10)
 	}
 
 	qualityOfWork := data.ScoreDetails["qualityOfWork"]
-	pdf.SetXY(621, 369)
+	pdf.SetXY(626, 369)
 	pdf.Text(fmt.Sprintf("%.2f", qualityOfWork.Scores[0]))
-	pdf.SetXY(621, 390)
+	pdf.SetXY(626, 390)
 	pdf.Text(fmt.Sprintf("%.2f", qualityOfWork.Scores[1]))
-	pdf.SetXY(621, 411)
+	pdf.SetXY(626, 411)
 	pdf.Text(fmt.Sprintf("%.2f", qualityOfWork.Scores[2]))
-	pdf.SetXY(621, 433)
+	pdf.SetXY(626, 433)
 	pdf.Text(fmt.Sprintf("%.2f", qualityOfWork.Overall))
 	totalScore = 0
 	for _, s := range qualityOfWork.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(576, 432)
+	pdf.SetXY(581, 432)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
-	pdf.SetXY(650, 365)
+	pdf.SetXY(655, 365)
 	comments = splitTextToWordWrap(pdf, qualityOfWork.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(650, pdf.GetY()+10)
+		pdf.SetXY(655, pdf.GetY()+10)
 	}
 
 	quantityOfWork := data.ScoreDetails["quantityOfWork"]
-	pdf.SetXY(621, 498)
+	pdf.SetXY(626, 498)
 	pdf.Text(fmt.Sprintf("%.2f", quantityOfWork.Scores[0]))
-	pdf.SetXY(621, 519)
+	pdf.SetXY(626, 519)
 	pdf.Text(fmt.Sprintf("%.2f", quantityOfWork.Scores[1]))
-	pdf.SetXY(621, 540)
+	pdf.SetXY(626, 540)
 	pdf.Text(fmt.Sprintf("%.2f", quantityOfWork.Scores[2]))
-	pdf.SetXY(621, 562)
+	pdf.SetXY(626, 562)
 	pdf.Text(fmt.Sprintf("%.2f", quantityOfWork.Overall))
 	totalScore = 0
 	for _, s := range quantityOfWork.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(576, 562)
+	pdf.SetXY(581, 562)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
-	pdf.SetXY(650, 495)
+	pdf.SetXY(655, 495)
 	comments = splitTextToWordWrap(pdf, quantityOfWork.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(650, pdf.GetY()+10)
+		pdf.SetXY(655, pdf.GetY()+10)
 	}
 }
 
@@ -189,128 +187,128 @@ func addPage1(pdf *gopdf.GoPdf, data *Employee) {
 func addPage2(pdf *gopdf.GoPdf, data *Employee) {
 
 	teamwork := data.ScoreDetails["teamwork"]
-	pdf.SetXY(214, 70)
+	pdf.SetXY(212, 70)
 	pdf.Text(fmt.Sprintf("%.2f", teamwork.Scores[0]))
-	pdf.SetXY(214, 92)
+	pdf.SetXY(212, 92)
 	pdf.Text(fmt.Sprintf("%.2f", teamwork.Scores[1]))
-	pdf.SetXY(214, 116)
+	pdf.SetXY(212, 116)
 	pdf.Text(fmt.Sprintf("%.2f", teamwork.Scores[2]))
-	pdf.SetXY(214, 143)
+	pdf.SetXY(212, 143)
 	pdf.Text(fmt.Sprintf("%.2f", teamwork.Overall))
 	var totalScore float64
 	for _, s := range teamwork.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(163, 143)
+	pdf.SetXY(161, 143)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
-	pdf.SetXY(250, 65)
+	pdf.SetXY(248, 65)
 	comments := splitTextToWordWrap(pdf, teamwork.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(250, pdf.GetY()+10)
+		pdf.SetXY(248, pdf.GetY()+10)
 	}
 
 	responsibility := data.ScoreDetails["responsibility"]
-	pdf.SetXY(214, 205)
+	pdf.SetXY(212, 205)
 	pdf.Text(fmt.Sprintf("%.2f", responsibility.Scores[0]))
-	pdf.SetXY(214, 229)
+	pdf.SetXY(212, 229)
 	pdf.Text(fmt.Sprintf("%.2f", responsibility.Scores[1]))
-	pdf.SetXY(214, 252)
+	pdf.SetXY(212, 252)
 	pdf.Text(fmt.Sprintf("%.2f", responsibility.Scores[2]))
-	pdf.SetXY(214, 277)
+	pdf.SetXY(212, 277)
 	pdf.Text(fmt.Sprintf("%.2f", responsibility.Overall))
 	totalScore = 0
 	for _, s := range teamwork.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(163, 277)
+	pdf.SetXY(161, 277)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
-	pdf.SetXY(250, 200)
+	pdf.SetXY(248, 200)
 	comments = splitTextToWordWrap(pdf, responsibility.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(250, pdf.GetY()+10)
+		pdf.SetXY(248, pdf.GetY()+10)
 	}
 
 	initiative := data.ScoreDetails["initiative"]
-	pdf.SetXY(214, 334)
+	pdf.SetXY(212, 334)
 	pdf.Text(fmt.Sprintf("%.2f", initiative.Scores[0]))
-	pdf.SetXY(214, 357)
+	pdf.SetXY(212, 357)
 	pdf.Text(fmt.Sprintf("%.2f", initiative.Scores[1]))
-	pdf.SetXY(214, 382)
+	pdf.SetXY(212, 382)
 	pdf.Text(fmt.Sprintf("%.2f", initiative.Scores[2]))
-	pdf.SetXY(214, 412)
+	pdf.SetXY(212, 412)
 	pdf.Text(fmt.Sprintf("%.2f", initiative.Overall))
 	totalScore = 0
 	for _, s := range initiative.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(163, 412)
+	pdf.SetXY(161, 412)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
-	pdf.SetXY(250, 330)
+	pdf.SetXY(248, 330)
 	comments = splitTextToWordWrap(pdf, initiative.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(250, pdf.GetY()+10)
+		pdf.SetXY(248, pdf.GetY()+10)
 	}
 
 	safety := data.ScoreDetails["safety"]
-	pdf.SetXY(214, 465)
+	pdf.SetXY(212, 465)
 	pdf.Text(fmt.Sprintf("%.2f", safety.Scores[0]))
-	pdf.SetXY(214, 489)
+	pdf.SetXY(212, 489)
 	pdf.Text(fmt.Sprintf("%.2f", safety.Scores[1]))
-	pdf.SetXY(214, 512)
+	pdf.SetXY(212, 512)
 	pdf.Text(fmt.Sprintf("%.2f", safety.Scores[2]))
-	pdf.SetXY(214, 535)
+	pdf.SetXY(212, 535)
 	pdf.Text(fmt.Sprintf("%.2f", safety.Scores[3]))
-	pdf.SetXY(214, 560)
+	pdf.SetXY(212, 560)
 	pdf.Text(fmt.Sprintf("%.2f", safety.Overall))
 	totalScore = 0
 	for _, s := range safety.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(163, 560)
+	pdf.SetXY(161, 560)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
-	pdf.SetXY(250, 462)
+	pdf.SetXY(248, 462)
 	comments = splitTextToWordWrap(pdf, safety.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(250, pdf.GetY()+10)
+		pdf.SetXY(248, pdf.GetY()+10)
 	}
 }
 
 func addPage3(pdf *gopdf.GoPdf, data *Employee) {
 
 	attendance := data.ScoreDetails["attendance"]
-	pdf.SetXY(602, 66)
+	pdf.SetXY(605, 66)
 	pdf.Text(fmt.Sprintf("%.2f", attendance.Scores[0]))
-	pdf.SetXY(602, 92)
+	pdf.SetXY(605, 92)
 	pdf.Text(fmt.Sprintf("%.2f", attendance.Scores[1]))
-	pdf.SetXY(602, 116)
+	pdf.SetXY(605, 116)
 	pdf.Text(fmt.Sprintf("%.2f", attendance.Scores[2]))
-	pdf.SetXY(602, 143)
+	pdf.SetXY(605, 143)
 	pdf.Text(fmt.Sprintf("%.2f", attendance.Overall))
 	var totalScore float64
 	for _, s := range attendance.Scores {
 		totalScore += s
 	}
-	pdf.SetXY(552, 143)
+	pdf.SetXY(554, 143)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
-	pdf.SetXY(635, 61)
+	pdf.SetXY(637, 61)
 	comments := splitTextToWordWrap(pdf, attendance.Comment, 150)
 	for _, c := range comments {
 		pdf.Text(c)
-		pdf.SetXY(635, pdf.GetY()+10)
+		pdf.SetXY(637, pdf.GetY()+10)
 	}
 
 	totalScore = 0
 	for _, v := range data.ScoreDetails {
 		totalScore += v.Overall
 	}
-	pdf.SetXY(672, 175)
+	pdf.SetXY(677, 175)
 	pdf.Text(fmt.Sprintf("%.2f", totalScore))
 
-	pdf.SetXY(752, 175)
+	pdf.SetXY(758, 175)
 	pdf.Text(fmt.Sprintf("%.2f", data.Score))
 
 	pdf.SetXY(440, 257)
@@ -348,27 +346,27 @@ func addPage3(pdf *gopdf.GoPdf, data *Employee) {
 
 func addPage4(pdf *gopdf.GoPdf, data *Employee) {
 
-	pdf.SetXY(60, 50)
+	pdf.SetXY(55, 50)
 	pdf.Text(data.TrainingComment)
 
 	pdf.SetFontSize(20)
 	tick := "√"
 	switch data.Rating {
 	case 5:
-		pdf.SetXY(65, 185)
+		pdf.SetXY(63, 185)
 	case 4:
-		pdf.SetXY(65, 210)
+		pdf.SetXY(63, 210)
 	case 3:
-		pdf.SetXY(65, 235)
+		pdf.SetXY(63, 235)
 	case 2:
-		pdf.SetXY(225, 185)
+		pdf.SetXY(223, 185)
 	default:
-		pdf.SetXY(225, 210)
+		pdf.SetXY(223, 210)
 	}
 	pdf.Text(tick)
 
     pdf.SetFontSize(7)
-    pdf.SetXY(62, 495)
+    pdf.SetXY(60, 495)
     pdf.Text(data.Supervisor)
 
 }
